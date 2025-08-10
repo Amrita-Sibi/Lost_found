@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASIET Lost & Found</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASIET Lost & Found - Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-    <h1>ASIET Lost & Found</h1>
+  <h1>ASIET Lost & Found</h1>
 </header>
 
-<section class="form-section">
-    <h2>Post a Lost Item</h2>
-    <form id="lostForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="text" id="department" placeholder="Your Department" required>
-        <textarea id="details" placeholder="Details about the lost item" required></textarea>
-        <input type="file" id="photo" accept="image/*">
-        <button type="submit">Post Lost Item</button>
-    </form>
+<!-- LOGIN SECTION -->
+<section id="loginSection">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+  <p id="loginError" class="error-msg">Incorrect username or password</p>
 </section>
 
-<section class="posts-section">
+<!-- LOST & FOUND APP SECTION -->
+<section id="lostFoundApp">
+  <section class="form-section">
+    <h2>Post a Lost Item</h2>
+    <form id="lostForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="department" placeholder="Your Department" required />
+      <textarea id="details" placeholder="Details about the lost item" required></textarea>
+      <input type="file" id="photo" accept="image/*" />
+      <button type="submit">Post Lost Item</button>
+    </form>
+  </section>
+
+  <section class="posts-section">
     <h2>Lost Items</h2>
     <div id="posts"></div>
+  </section>
+
+  <button id="logoutBtn" class="logout-btn">Logout</button>
 </section>
 
 <script src="script.js"></script>
