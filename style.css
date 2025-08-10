@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('image3.jpg') no-repeat center center/cover;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+header {
+    background: rgba(0,0,0,0.7);
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    background: rgba(0,0,0,0.6);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.reply {
+    background: rgba(255,255,255,0.1);
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
